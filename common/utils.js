@@ -1,4 +1,5 @@
 import { preferences } from "user-settings";
+import  document  from "document";
 // Add zero in front of numbers < 10
 export function zeroPad(i) {
   if (i < 10) {
@@ -7,7 +8,11 @@ export function zeroPad(i) {
   return i;
 }
 
-export function updateDisplay(dateObject, time, dateLabel, dateDisplay, bestBefore){
+export function updateDisplay(dateObject, bestBefore){
+
+  const dateDisplay = document.getElementById("myLabel");
+  const dateLabel = document.getElementById("dateLabel");
+  const time = document.getElementById("time");
   
    let mins = zeroPad(dateObject.getMinutes());
    let hours = dateObject.getHours();

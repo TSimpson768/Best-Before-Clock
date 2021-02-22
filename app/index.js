@@ -7,8 +7,6 @@ clock.granularity = "minutes";
 
 // Get a handle on the <text> element
 const myLabel = document.getElementById("myLabel");
-const dateLabel = document.getElementById("dateLabel");
-const time = document.getElementById("time");
 let bestBefore=false; //If true - shows the date to pick for or after. Else show today's date
 
 // Update the <text> element every tick with the current time
@@ -17,9 +15,9 @@ clock.ontick = (evt) => {
     let day = today.getDate();
   if (bestBefore===true){
     let BBDate = new Date(today.setDate(day +3));
-    util.updateDisplay(BBDate, time, dateLabel, myLabel, bestBefore);
+    util.updateDisplay(BBDate, bestBefore);
   } else {
-    util.updateDisplay(today, time, dateLabel, myLabel, bestBefore);
+    util.updateDisplay(today, bestBefore);
   }
 }
 myLabel.addEventListener("click", (evt) =>{
@@ -32,6 +30,6 @@ myLabel.addEventListener("click", (evt) =>{
     bestBefore=true;
     date= new Date(date.setDate(day + 3));
   }
-  util.updateDisplay(date, time, dateLabel, myLabel, bestBefore);
+  util.updateDisplay(date, bestBefore);
 })
 
