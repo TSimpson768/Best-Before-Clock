@@ -10,8 +10,6 @@
     "iconFile": "resources/icon.png",
     "wipeColor": "",
     "requestedPermissions": [
-      "access_activity",
-      "access_heart_rate"
     ],
     "buildTargets": [
       "gemini"
