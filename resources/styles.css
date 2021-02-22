@@ -1,0 +1,33 @@
+.background {
+  viewport-fill: fb-green-press;
+}
+
+#myLabel {
+  font-size: 100;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 50%;
+  y: 250;
+  fill: white;
+}
+
+#time{
+  font-size: 110;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 50%;
+  y: 100;
+  fill: white;
+  
+}
+
+#dateLabel{
+  x: 50%;
+  y: 50%;
+  font-size: 40;
+  fill: orangered;
+  text-anchor: middle;
+  text-length: 32;
+}

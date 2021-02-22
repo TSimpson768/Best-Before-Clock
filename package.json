@@ -1,0 +1,26 @@
+{
+  "devDependencies": {
+    "@fitbit/sdk": "~4.2.0",
+    "@fitbit/sdk-cli": "^1.6.3"
+  },
+  "fitbit": {
+    "appUUID": "7be686e2-285c-4b9e-a9a3-b7c989f3a009",
+    "appType": "clockface",
+    "appDisplayName": "BestBeforeClock",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_activity",
+      "access_heart_rate"
+    ],
+    "buildTargets": [
+      "gemini"
+    ],
+    "i18n": {
+      "en-US": {
+        "name": "BestBeforeClock"
+      }
+    },
+    "defaultLanguage": "en-US"
+  }
+}

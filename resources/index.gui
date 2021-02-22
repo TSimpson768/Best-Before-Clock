@@ -1,0 +1,5 @@
+<svg class="background" pointer-events="visible">
+  <text id="time"/>
+  <text id="dateLabel"/>
+  <text id="myLabel" pointer-events="visible"/>
+</svg>
