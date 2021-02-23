@@ -1,5 +1,5 @@
 .background {
-  viewport-fill: fb-green-press;
+  viewport-fill: black;
 }
 
 #myLabel {
@@ -27,7 +27,7 @@
   x: 50%;
   y: 50%;
   font-size: 40;
-  fill: orangered;
+  fill: yellow;
   text-anchor: middle;
   text-length: 32;
 }
