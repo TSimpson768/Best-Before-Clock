@@ -3,7 +3,11 @@ function settingsPage(props){
             <page>
 
                 <ColorSelect
-                
+                    settingsKey = "backgroundColour"
+                    colors={[
+                        {color: 'black'},
+                        {color: 'green'}
+                    ]}
                 />
                 
             </page>
