@@ -3,6 +3,8 @@ import document from "document";
 import * as util from "../common/utils";
 import * as messaging from "messaging";
 
+import { FitFont } from "fitfont";
+
 // Update the clock every minute
 clock.granularity = "minutes";
 

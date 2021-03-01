@@ -1,6 +1,10 @@
 import { preferences } from "user-settings";
 import  document  from "document";
+
+import { FitFont } from "fitfont";
+
 // Add zero in front of numbers < 10
+
 export function zeroPad(i) {
   if (i < 10) {
     i = "0" + i;
@@ -10,9 +14,9 @@ export function zeroPad(i) {
 
 export function updateDisplay(dateObject, bestBefore){
 
-  const dateDisplay = document.getElementById("myLabel");
+  const dateDisplay = new FitFont({id: "myLabel", font:"Roboto_100", halign: "middle"});
   const dateLabel = document.getElementById("dateLabel");
-  const time = document.getElementById("time");
+  const time = new FitFont({id: "time", font:"Roboto_100", halign:"middle"})
   
    let mins = zeroPad(dateObject.getMinutes());
    let hours = dateObject.getHours();
