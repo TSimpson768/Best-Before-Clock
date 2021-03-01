@@ -1,5 +1,5 @@
-.background {
-  viewport-fill: black;
+#background {
+  fill: black;
 }
 
 #myLabel {

@@ -1,12 +1,14 @@
 import clock from "clock";
 import document from "document";
 import * as util from "../common/utils";
+import * as messaging from "messaging";
 
 // Update the clock every minute
 clock.granularity = "minutes";
 
 // Get a handle on the <text> element
 const myLabel = document.getElementById("myLabel");
+const background = document.getElementById("background");
 let bestBefore=false; //If true - shows the date to pick for or after. Else show today's date
 
 // Update the <text> element every tick with the current time
@@ -31,5 +33,15 @@ myLabel.addEventListener("click", (evt) =>{
     date= new Date(date.setDate(day + 3));
   }
   util.updateDisplay(date, bestBefore);
+})
+
+messaging.peerSocket.addEventListener("message", (evt)=>{
+
+  if(evt && evt.data && evt.data.key === "backgroundColour"){
+      background.style.fill = evt.data.value;
+
+  }
+
+
 })
 
