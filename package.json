@@ -9,8 +9,7 @@
     "appDisplayName": "BestBeforeClock",
     "iconFile": "resources/icon.png",
     "wipeColor": "",
-    "requestedPermissions": [
-    ],
+    "requestedPermissions": [],
     "buildTargets": [
       "gemini"
     ],
@@ -23,5 +22,8 @@
   },
   "scripts": {
     "build": "fitbit-build"
+  },
+  "dependencies": {
+    "fitfont": "^1.3.3"
   }
 }
