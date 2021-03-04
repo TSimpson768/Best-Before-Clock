@@ -1,8 +1,7 @@
 function HelloWorld(props) {
     return (
       <Page>
-        <Section
-          title={<Text bold align="center">Demo Settings</Text>}>
+        <Section>
             <Text>Background Colour</Text>
           <ColorSelect
             label="Background Colour"
@@ -17,7 +16,7 @@ function HelloWorld(props) {
           />
 
           <TextInput
-            label="Target date"
+            label="Minimum Life (days)"
             settingsKey="dateOffset"
             type="number"
           />
