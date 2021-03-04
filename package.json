@@ -11,7 +11,7 @@
     "wipeColor": "",
     "requestedPermissions": [],
     "buildTargets": [
-      "gemini"
+      "gemini", "meson", "mira", "higgs"
     ],
     "i18n": {
       "en-US": {
