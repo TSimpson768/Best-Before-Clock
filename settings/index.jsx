@@ -3,7 +3,9 @@ function HelloWorld(props) {
       <Page>
         <Section
           title={<Text bold align="center">Demo Settings</Text>}>
+            <Text>Background Colour</Text>
           <ColorSelect
+            label="Background Colour"
             settingsKey="backgroundColour"
             colors={[
               {color: 'black'},
@@ -12,6 +14,12 @@ function HelloWorld(props) {
               {color: 'orangered'},
               {color: 'lime'}
             ]}
+          />
+
+          <TextInput
+            label="Target date"
+            settingsKey="dateOffset"
+            type="number"
           />
         </Section>
       </Page>
