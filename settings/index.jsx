@@ -11,7 +11,10 @@ function HelloWorld(props) {
               {color: 'green'},
               {color: 'navy'},
               {color: 'orangered'},
-              {color: 'lime'}
+              {color: 'lime'},
+              {color: 'purple'},
+              {color: 'lightblue'},
+              {color:'red'}
             ]}
           />
 
