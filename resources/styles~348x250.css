@@ -8,7 +8,7 @@
     text-length: 32;
     text-anchor: middle;
     x: 50%;
-    y: 210;
+    y: 225;
     fill: white;
   }
   
@@ -18,14 +18,14 @@
     text-length: 32;
     text-anchor: middle;
     x: 50%;
-    y: 90;
+    y: 100;
     fill: white;
     
   }
   
   #dateLabel{
     x: 50%;
-    y: 50%;
+    y: 140;
     font-size: 40;
     fill: yellow;
     text-anchor: middle;
