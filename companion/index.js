@@ -6,13 +6,13 @@ let KEY_BACKGROUND_COLOR = "backgroundColour";
 let KEY_DATE_OFFSET = "dateOffset";
 
 settingsStorage.addEventListener("change", (evt) => {
-    let newValue = evt.newValue;
+    // let newValue = evt.newValue;
 
-    if (evt.key===KEY_DATE_OFFSET) {
-        let textOutput = JSON.parse(settingsStorage.getItem(KEY_DATE_OFFSET));
-        newValue = textOutput.name;//Seemed impossible last night, 10 mins today. Never code tired!
-    }
-    sendValue(evt.key, newValue);
+    // if (evt.key===KEY_DATE_OFFSET) {
+    //     let textOutput = JSON.parse(settingsStorage.getItem(KEY_DATE_OFFSET));
+    //     newValue = textOutput.name;//Seemed impossible last night, 10 mins today. Never code tired!
+    // }
+    sendValue(evt.key, evt.newValue);
   });
 
 if (companion.launchReasons.settingsChanged) {
@@ -23,12 +23,17 @@ if (companion.launchReasons.settingsChanged) {
 
 
 function sendValue(key, val){
+    let newValue = val;
 
+    if (key===KEY_DATE_OFFSET) {
+        let textOutput = JSON.parse(settingsStorage.getItem(KEY_DATE_OFFSET));
+        newValue = textOutput.name;//Seemed impossible last night, 10 mins today. Never code tired!
+    }
     if (val) {
 
         sendSettingData({
             key: key,
-            value: JSON.parse(val)
+            value: JSON.parse(newValue)
         });
         
     }
