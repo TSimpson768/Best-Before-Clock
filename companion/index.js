@@ -6,12 +6,6 @@ let KEY_BACKGROUND_COLOR = "backgroundColour";
 let KEY_DATE_OFFSET = "dateOffset";
 
 settingsStorage.addEventListener("change", (evt) => {
-    // let newValue = evt.newValue;
-
-    // if (evt.key===KEY_DATE_OFFSET) {
-    //     let textOutput = JSON.parse(settingsStorage.getItem(KEY_DATE_OFFSET));
-    //     newValue = textOutput.name;//Seemed impossible last night, 10 mins today. Never code tired!
-    // }
     sendValue(evt.key, evt.newValue);
   });
 
@@ -27,7 +21,7 @@ function sendValue(key, val){
 
     if (key===KEY_DATE_OFFSET) {
         let textOutput = JSON.parse(settingsStorage.getItem(KEY_DATE_OFFSET));
-        newValue = textOutput.name;//Seemed impossible last night, 10 mins today. Never code tired!
+        newValue = textOutput.name;//Seemed impossible last night, 10 mins today. Never code tired! For some reason text input needs to be parsed twice
     }
     if (val) {
 
